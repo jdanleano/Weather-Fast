@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(19, 50, 0);
+}
+
+ul {
+    list-style: none;
+
+}
+/* Added style to the li elements for the search history */
+li {
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.card {
+    background-color: chartreuse;
+}
+
+/* Edited font size for the titles  */
+.card-title {
+    font-size: 20px;
+}
+
+/* This adjusts the image size */
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* This is the style for the 5 day forecast cards*/
+.fiveDayColor {
+    padding: 20px;
+    background-color: darkgreen;
+    color: white;
+    float: left;
+    margin: 10px;
+    border: 1px solid lightgray;
+
+}

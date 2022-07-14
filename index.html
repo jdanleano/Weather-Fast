@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Added the CSS stylesheet for bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>WeatherFast - Weather App</title>
+</head>
+
+<body>
+    <!-- Added script links for jquery and bootstra.js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body text-center bg-chartreuse text-black">
+                <h1>WeatherFast - Weather App</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <!-- This is where the seach box and history will go -->
+                <div class="col">
+                    <div class="card-body text-center">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-black">Search For A City</h6>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control searchInput" placeholder="Enter City Name"
+                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary bg-chartreuse searchButton" type="button"
+                                            id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                              </svg></button>
+                                    </div>
+                                </div>
+
+                                <ul class="list-group">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appends current weather forecast-->
+                <div class="col mt-4 mr-5">
+                    <div class="card currentCard pb-2 pt-1">
+                        <h5 class="card-title mt-2 text-center">Current Forecast</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <div class="card pb-5 fiveDayCard pl-5">
+
+                            <!-- Appends 5 day forecast-->
+                            <h5 class="card-title mt-2 mr-5">5-Day Forecast </h5>
+                            <div class="row">
+                                <div class="col fiveDayOne">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+    <!-- Used moment.js to generage dates of the forecast -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+</body>
+
+</html>
